@@ -2,8 +2,7 @@ body{
   background-image: url(images/Background.jpg);
   background-size:cover;
   background-repeat: no-repeat;
-  margin-top: 60px;
-  
+  margin: 20px auto;
 }
 
 
@@ -33,33 +32,37 @@ p{
 .menu{
   display: flex;
   flex-direction: row;
-  justify-content:space-evenly;
-  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
   font-family: Cinzel Decorative;
   color: rgba(255, 255, 255, 1);
-  margin-top: 50px;
 }
 
-
-.box-one{
-  text-align: center;
-  
+.box-two {
+  padding: 20px;
 }
 
-.box-two{
-  padding: 17px;
-  text-align: center;
+.box-three {
+  padding: 25px;
 }
 
-.box-three{
-text-align: center;
-margin-top: 17px;
+.box-four {
+  padding: 8px;
 }
 
-.box-four{
-  text-align: center;
+.box-one > img{
+  width: 200px;
+  }
+
+.box-two > img{
+  width: 130px;
 }
 
+.box-three > img{
+  width: 180px;
+}
 
-
-
+.box-four > img{
+  width: 190px;
+}
