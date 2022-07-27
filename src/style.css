@@ -41,10 +41,38 @@ body{
   margin: 10px;
 }
   
- .box-one .box-two .box-three .box-four{
+.box-one .box-two .box-three .box-four{
   width: 25%;
   height: 100px;
   min-width: 200px;
   }
   
+  /* Characters page */
+
+.second-page{
+    background-color: black;
+  }
+
+  .filters{
+    border: 2px solid #B69350;
+    padding: 10px 20px;
+    background-color: #B69350;
+    border-radius: 10px;
+    font-weight: 800;
+    color: white ;
+    font-family: poppins;
+}
+
+.filters:hover{ /*selector pseudoclase: solo aplica al elemento cuando el puntero está sobre él*/
+    color: #B69350;
+    background-color: transparent;
+}
+  .main-characters{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:space-around;
+    text-align: center;
+    font-family: Cinzel Decorative;
+    color: rgba(255, 255, 255, 1);
+ }
 
