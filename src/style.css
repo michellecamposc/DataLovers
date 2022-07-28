@@ -2,11 +2,12 @@ body{
   background-image: url(images/homepage/Background.jpg);
   background-size:cover;
   background-repeat: no-repeat;
-  margin: 40px;
+  margin: 90px;
 }
 
  h1{
   color: rgba(255, 255, 255, 1);
+  font-size: 35px;
   font-family: Cinzel Decorative;
   margin-top: 90px;
   margin-bottom: 0;
@@ -41,12 +42,29 @@ body{
   margin: 10px;
 }
   
-.box-one .box-two .box-three .box-four{
+.boxes{
   width: 25%;
-  height: 100px;
+  height: 230px;
   min-width: 200px;
+  background-color: none;
+  border: none;
+  color: none;
   }
-  
+
+ h3{
+  font-family: Cinzel Decorative;
+  color: rgb(0, 0, 0)
+}
+
+.home-buttons{
+  background-color:rgba(255, 255, 255, 0.794);
+  border-radius: 7px;
+  padding:0;
+  height: 45px;
+  width: 150px;
+  border:none;
+
+}
   /* Characters page */
 
 .second-page{

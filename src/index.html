@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Harry Potter</title>
     <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="images/homepage/ico.png"/>
@@ -14,31 +14,39 @@
   <body>
     <div id="first-page">
       <section class="welcome">
-        <img alt="Logo de la página" src="images/homepage/logo.png" width="70"/>
+          <img alt="Logo de la página" src="images/homepage/logo.png" width="70"/>
         <h1>Bienvenidos a la plataforma 9 ¾</h1>
         <p>Explora aquí el mundo de Harry Potter</p>
       </section>
       <section class ="menu">
-        <article class="box-one">
-          <img alt="Personajes" src="images/homepage/personajes.png" class="width-img"/>
-          <h3>Personajes</h3>
+        <article class="boxes">
+            <img alt="Personajes" src="images/homepage/personajes.png" class="width-img"/>
+              <button class="home-buttons" id="first-button">
+                <h3>Personajes</h3>
+              </button>
         </article>
-        <article class="box-two">
+        <article class="boxes">
           <img alt="Hechizos" src="images/homepage/Hechizos.png" class="width-img"/>
-          <h3>Hechizos</h3>
+          <button class=home-buttons>
+            <h3>Hechizos</h3>  
+          </button>
         </article>
-        <article class="box-three">
+        <article class="boxes">
           <img alt="Pociones" src="images/homepage/pociones.png" class="width-img"/>
-          <h3>Pociones</h3>
+          <button class="home-buttons">
+            <h3>Pociones</h3>
+          </button>
         </article>
-        <article class="box-four">
+        <article class="boxes">
           <img alt="Libros" src="images/homepage/libros.png" class="width-img"/>
-          <h3>Libros</h3>
+          <button class="home-buttons">
+            <h3>Libros</h3>
+          </button>
         </article>
       </section>
     </div>
     <!-- Characters page -->
-    <div class="second-page">
+    <div class="second-page" style="display: none;">
       <nav>
         <img alt="Logo de la página" src="images/homepage/logo.png" width="70" />
         <a href="">Hechizos</a>
@@ -48,12 +56,17 @@
       <h1>Personajes de Harry Potter</h1>><br><br><br>
       <!-- Botones -->
       <section>
-        <button class="filters">Protagonistas</button>
-        <button class="filters">Hogwarts</button>
-        <button class="filters">Especie</button>
-        <button class="filters">Por libros</button>
-        <button class="filters">Ordenar</button><hr>
-      </section>
+        <ul class="nav"></ul>
+          <li><a href="">Protagonistas</a></li>
+            <ul>
+              <li></li>
+            </ul>
+          <li><a href="">Hogwarts</a></li>
+          <li><a href="">Especie</a></li>
+          <li><a href="">Por libros</a></li>
+          <li><a href="">Ordenar</a></li>
+        </ul>
+      </section><hr>
       <!-- personajes con fotos -->
       <section class="main-characters">
         <article>
