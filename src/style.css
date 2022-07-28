@@ -12,6 +12,7 @@ body{
   margin-top: 90px;
   margin-bottom: 0;
   position: relative;
+  text-align: center;
  }
   
   
@@ -68,28 +69,78 @@ body{
   /* Characters page */
 
 .second-page{
-    background-color: black;
+    background-color: #11141B;
+    padding: 30px;
+}
+
+.first-bar{
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.first-bar >a{
+  font-family: Cinzel Decorative;
+  color: white;
+  text-decoration: none;
+  padding: 20px;
+  
+}
+
+  .horizontal-menu{
+    list-style: none;
+    display: flex;
+    /* align-content: center; */
+    justify-content: center;
+    gap: 4rem;
   }
 
-  .filters{
-    border: 2px solid #B69350;
-    padding: 10px 20px;
-    background-color: #B69350;
-    border-radius: 10px;
-    font-weight: 800;
-    color: white ;
-    font-family: poppins;
-}
+  .horizontal-menu > li > a{
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+  }
 
-.filters:hover{ /*selector pseudoclase: solo aplica al elemento cuando el puntero está sobre él*/
-    color: #B69350;
-    background-color: transparent;
-}
+  .categories{
+  background-color: #B69350;
+  border-radius: 10px;
+  font-family: poppins;
+  }
+
+  .vertical-menu{
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 150px;
+    background-color: #B69350;
+    padding-inline-start: 0%;
+    border-radius: 20px;
+    margin-top: 2px;
+  }
+
+  .horizontal-menu li:hover .vertical-menu{
+    display: block;
+  }
+  
+  .vertical-menu li:hover{
+    background-color: #781F29;
+  }
+
+  .vertical-menu > li > a{
+    display: block;
+    color: white;
+    padding: 15px 15px 15px 20px;
+    text-decoration: none;    
+  }
+  
   .main-characters{
     display: flex;
     flex-flow: row wrap;
     justify-content:space-around;
-    text-align: center;
+    column-gap: 5rem;
+    padding: 25px;
+    text-align:center;
     font-family: Cinzel Decorative;
     color: rgba(255, 255, 255, 1);
  }
