@@ -69,13 +69,15 @@ body{
   /* Characters page */
 
 .second-page{
-    background-color: #11141B;
+    /* background-color: #11141B; */
     padding: 30px;
+    /* display: none; */
 }
 
 .first-bar{
   margin-left: 40px;
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
 }
 
@@ -90,7 +92,7 @@ body{
   .horizontal-menu{
     list-style: none;
     display: flex;
-    /* align-content: center; */
+    flex-flow: row wrap;
     justify-content: center;
     gap: 4rem;
   }
