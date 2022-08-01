@@ -1,8 +1,14 @@
 body{
+  margin:0%;
+  padding: 0;
+}
+
+.first-page{
   background-image: url(images/homepage/Background.jpg);
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
-  margin: 90px;
+  min-height: 100vh;
+  padding: 90px;
 }
 
  h1{
@@ -21,12 +27,13 @@ body{
   color: rgba(255, 255, 255, 1);
   font-size: 19px;
   margin-top: 5px;
+  margin-bottom: 20px;
  }
   
  .welcome{
   color: rgba(255, 255, 255, 1);
   font-family: Cinzel Decorative;
-  text-align: center;
+  text-align:center;
  }
   
 .menu{
@@ -47,14 +54,13 @@ body{
   width: 25%;
   height: 230px;
   min-width: 200px;
-  background-color: none;
   border: none;
   color: none;
   }
 
  .category-button{
   font-family: Cinzel Decorative;
-  color: rgb(0, 0, 0)
+  color: rgb(0, 0, 0);
 }
 
 .home-buttons{
@@ -64,19 +70,23 @@ body{
   height: 45px;
   width: 150px;
   border:none;
-
+  font-family: Cinzel Decorative;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
 }
-  /* Characters page */
+  /* Characters page(Second-page) */
 
 .second-page{
     background-color: #11141B;
     padding: 30px;
+    min-height: 100vh;
+    padding: 40px;
 }
 
 .first-bar{
-  margin-left: 40px;
+  margin-left: 38px;
   display: flex;
-  align-items: center;
+  flex-flow: row wrap;
 }
 
 .first-bar >a{
@@ -90,7 +100,7 @@ body{
   .horizontal-menu{
     list-style: none;
     display: flex;
-    /* align-content: center; */
+    flex-flow: row wrap;
     justify-content: center;
     gap: 4rem;
   }
@@ -131,7 +141,9 @@ body{
     display: block;
     color: white;
     padding: 15px 15px 15px 20px;
-    text-decoration: none;    
+    text-decoration: none;   
+    flex-flow: row wrap;
+    justify-content:space-evenly; 
   }
   
   .main-characters{
@@ -145,3 +157,11 @@ body{
     color: rgba(255, 255, 255, 1);
  }
 
+ h3{
+   margin-top: 30px;
+   margin-bottom: 30px;
+ }
+ 
+ hr{
+   width: 93%;
+ }

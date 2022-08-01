@@ -1,20 +1,23 @@
-// import { example } from "./data.js";
-// // import data from './data/lol/lol.js';
-// import data from "./data/pokemon/pokemon.js";
-// // import data from './data/rickandmorty/rickandmorty.js';
+import data from "./data/harrypotter/harry.js";
 
-// console.log(example, data);
+//Crearemos el html de la página e imprimiremos la data importada.
 
-//El botón nos lleva a la segunda página
-const firstButton = document.getElementById("first-button");
-firstButton.addEventListener("click", goToSecondPage);
+// //Se puede acceder al arreglo
+// let books = data.books;
+// console.log(books);
 
-function goToSecondPage() {
+//let booksTitle = data.books[0].title;clear
+
+//console.log(booksTitle);
+
+//Go to characters page with a click event
+document
+  .getElementById("first-button")
+  .addEventListener("click", charactersPage);
+
+function charactersPage() {
   // Hide the first page
-  const firstPage = document.getElementById("first-page");
-  firstPage.style.display = "none";
-
+  document.getElementById("first-page").style.display = "none";
   // Show the second page
-  const secondPage = document.getElementById("second-page");
-  secondPage.style.display = "block";
+  document.getElementById("second-page").style.display = "block";
 }
