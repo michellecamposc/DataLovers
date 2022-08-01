@@ -77,16 +77,24 @@ body{
   /* Characters page(Second-page) */
 
 .second-page{
-    background-color: #11141B;
+    /* background-color: #11141B; */
     padding: 30px;
+<<<<<<< HEAD
     min-height: 100vh;
     padding: 40px;
+=======
+    /* display: none; */
+>>>>>>> e0ec4c5 (avances en el import y estilos de 1st 2nd page)
 }
 
 .first-bar{
   margin-left: 38px;
   display: flex;
   flex-flow: row wrap;
+<<<<<<< HEAD
+=======
+  align-items: center;
+>>>>>>> e0ec4c5 (avances en el import y estilos de 1st 2nd page)
 }
 
 .first-bar >a{

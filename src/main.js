@@ -21,3 +21,4 @@ function charactersPage() {
   // Show the second page
   document.getElementById("second-page").style.display = "block";
 }
+
