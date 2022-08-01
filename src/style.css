@@ -80,11 +80,15 @@ body{
     /* background-color: #11141B; */
     padding: 30px;
 <<<<<<< HEAD
+<<<<<<< HEAD
     min-height: 100vh;
     padding: 40px;
 =======
     /* display: none; */
 >>>>>>> e0ec4c5 (avances en el import y estilos de 1st 2nd page)
+=======
+    /* display: none; */
+>>>>>>> e0ec4c58bee929607993b95a45187a341cbc15fd
 }
 
 .first-bar{
@@ -92,7 +96,10 @@ body{
   display: flex;
   flex-flow: row wrap;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> e0ec4c58bee929607993b95a45187a341cbc15fd
   align-items: center;
 >>>>>>> e0ec4c5 (avances en el import y estilos de 1st 2nd page)
 }
