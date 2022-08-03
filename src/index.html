@@ -21,7 +21,7 @@
       <section class ="menu">
         <article class="boxes">
             <img alt="Personajes" src="images/homepage/personajes.png" class="width-img"/>
-            <button type="button" class="home-buttons" id="first-button" onclick="charactersPage()">Personajes</button>
+            <button type="button" class="home-buttons" id="first-button">Personajes</button>
         </article>
         <article class="boxes">
           <img alt="Hechizos" src="images/homepage/Hechizos.png" class="width-img"/> 
@@ -33,12 +33,12 @@
         </article>
         <article class="boxes">
           <img alt="Libros" src="images/homepage/libros.png" class="width-img"/>
-          <button class="home-buttons">libros</button>
+          <button class="home-buttons" id="fourth-button">libros</button>
         </article>
       </section>
     </div>
     <!-- Characters page -->
-    <div class="second-page" style= "display: none;"  id="second-page">
+    <div id="second-page" class="second-page" style= "display: none;">
       <nav class="first-bar">
         <img alt="Logo de la página" src="images/homepage/logo.png" width="80"/>
         <a href="">Hechizos</a>
@@ -48,6 +48,13 @@
       <h1>Personajes de Harry Potter</h1><br><br><br>
       <!-- Categorias -->
       <section>
+
+        <select name="select">
+          <option value="Gryffindor">Gryffindor</option>
+          <option value="Ravenclaw">Ravenclaw</option>
+          <option value="Slytherin">Slytherin</option>
+        </select>
+        
         <ul class="horizontal-menu">
           <li class="categories"><a href="">Todos los personajes</a>
          </li>
@@ -84,7 +91,32 @@
             </ul>
           </li>
         </ul>
+      </section><hr>
+      <div id="charactersContainer" class="charactersCard"></div>   <!--contenedor de info personajes-->
+    </div>
+    <!-- Books page -->
+    <div id="fourth-page" class="books-page" style= "display: none;">
+      <nav class="first-bar">
+        <img alt="Logo de la página" src="images/homepage/logo.png" width="70" />
+        <a href="">Personajes</a>
+        <a href="">Hechizos</a>
+        <a href="">Pociones</a>
+      </nav>
+      <h1>Libros de la Saga</h1><br>
+      <!-- Categorias -->
+      <section>
+        <ul class="horizontal-menu">
+          <li class="categories"><a href="">Todos los libros</a>
+         </li>
+          <li class="categories"><a href="">Ordenar por fecha</a>
+            <ul class="vertical-menu">
+              <li><a href="">Ascendente</a></li>
+              <li><a href="">Descendente</a></li>
+            </ul>
+          </li>
+        </ul>
       </section><hr>   
+        <section id="booksContainer" class="booksCard">aquí va la info <br><br><br><br><br><br><br><br><br><br></section>
     </div>
     <script src="main.js" type="module"></script>
     </html>
