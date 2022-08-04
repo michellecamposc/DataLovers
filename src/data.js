@@ -1,14 +1,11 @@
-
-//Crear funciones de filtrar data y ordenar data
-
 // const characters = data.characters;
 export const filterData = (characters, condition) => {
-        const charactersHouse = characters.filter(element => element.house == condition);
-        return charactersHouse;
-      };
+  const charactersHouse = characters.filter(
+    (element) => element.house == condition
+  );
+  return charactersHouse;
+};
 
-
-  
 //Filtros para personajes:
 //Nombre, Genero, Casa, especies, fec. nac
 
@@ -16,13 +13,12 @@ export const filterData = (characters, condition) => {
 //     const potionName = data.filter((x) => x.name <= "Drowsiness Draught");
 //     return potionName;
 //   };
-  
+
 //   /*const potionName = data.filter((element) => {
 //       //Acá retornaremos la poción que quisieran ordenar los usuarios
 //       return element.name(condition);
 //     });*/
-  
-  
+
 // const sortBooksUp = books.sort((a, b)=> {
 //     if (a.id < b.id) {
 //         return -1;
@@ -31,7 +27,7 @@ export const filterData = (characters, condition) => {
 //         return 1;
 //     }
 //     return 0;
-   
+
 // });
 // console.log(sortBooksUp);
 

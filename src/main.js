@@ -1,9 +1,9 @@
 import data from "./data/harrypotter/harry.js";
 
-import {filterData} from "./data.js";
+import { filterData } from "./data.js";
 
 const characters = data.characters;
-console.log(filterData(characters,"Gryffindor"));
+console.log(filterData(characters, "Gryffindor"));
 
 //Crear un elemento: document.createElement("elemento")
 //Añadir class a un elemento: element.classList.add("className")
@@ -12,38 +12,37 @@ console.log(filterData(characters,"Gryffindor"));
 //Fragmentos de código: document.createDocumentFragment()
 
 const charactersContainer = document.getElementById("charactersContainer");
-function showCharacters(){
-const divCharacters = document.createElement("div");
-  characters.forEach(characters => {
+function showCharacters() {
+  const divCharacters = document.createElement("div");
+  characters.forEach((characters) => {
     const name = document.createElement("h2");
     name.classList.add("divName");
-    name.textContent = characters.name;
+    name.textContent = "Name: " + characters.name;
     divCharacters.appendChild(name);
 
-    const gender = document.createElement("h3");
+    const gender = document.createElement("p");
     gender.classList.add("divGender");
-    gender.textContent = characters.gender;
+    gender.textContent = "Gender: " + characters.gender;
     divCharacters.appendChild(gender);
 
-    const house = document.createElement("h3");
+    const house = document.createElement("p");
     house.classList.add("divHouse");
-    house.textContent = characters.house;
+    house.textContent = "House: " + characters.house;
     divCharacters.appendChild(house);
 
     const species = document.createElement("p");
     species.classList.add("divSpecies");
-    species.textContent = characters.species;
+    species.textContent = "Specie: " + characters.species;
     divCharacters.appendChild(species);
 
     const birth = document.createElement("p");
     birth.classList.add("divBirth");
-    birth.textContent = characters.birth;
+    birth.textContent = "Date birth: " + characters.birth;
     divCharacters.appendChild(birth);
-  })
+  });
   charactersContainer.appendChild(divCharacters);
 }
-  showCharacters()
-
+showCharacters();
 
 // //.Filter: Crea un nuevo array con todos los elementos que cumplan la condición implementada por la función dada.
 // const potionName = potions.filter((x) => x.id <= "50");
@@ -69,9 +68,7 @@ function charactersPage() {
 }
 
 //Go to books page with a click event
-document
-  .getElementById("fourth-button")
-  .addEventListener("click", booksPage);
+document.getElementById("fourth-button").addEventListener("click", booksPage);
 
 function booksPage() {
   // Hide the first page

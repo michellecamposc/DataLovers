@@ -39,60 +39,46 @@
     </div>
     <!-- Characters page -->
     <div id="second-page" class="second-page" style= "display: none;">
-      <nav class="first-bar">
-        <img alt="Logo de la página" src="images/homepage/logo.png" width="80"/>
-        <a href="">Hechizos</a>
-        <a href="">Pociones</a>
-        <a href="">Libros</a>
-      </nav>
+      <div>
+        <nav class="first-bar">
+          <img alt="Logo de la página" src="images/homepage/logo.png" width="80"/>
+          <a href="">Hechizos</a>
+          <a href="">Pociones</a>
+          <a href="">Libros</a>
+        </nav>
+      </div>
       <h1>Personajes de Harry Potter</h1><br><br><br>
-      <!-- Categorias -->
-      <section>
 
-        <select name="select">
+      <!-- Categorias -->
+      <div class="select-container">
+        <select id="characters" class="select">
+          <option disabled selected>All characters</option>
+        </select>
+  
+        <select id="houses" class="select">
+          <option disabled selected>Houses</option>
           <option value="Gryffindor">Gryffindor</option>
           <option value="Ravenclaw">Ravenclaw</option>
-          <option value="Slytherin">Slytherin</option>
+           <option value="Slytherin">Slytherin</option>
         </select>
-        
-        <ul class="horizontal-menu">
-          <li class="categories"><a href="">Todos los personajes</a>
-         </li>
+         
+        <select id="species" class="select">
+          <option disabled selected>Species</option>
+          <option value="Humans">Humans</option>
+          <option value="Ghost">Ghost</option>
+          <option value="House-elf">House elf</option>
+        </select>
           
-          <li class="categories"><a href="">Hogwarts</a>
-            <ul class="vertical-menu">
-              <li><a href="">Gryffindor</a></li>
-              <li><a href="">Ravenclaw</a></li>
-              <li><a href="">Slytherin</a></li>
-              <li><a href="">Hufflepuff</a></li>
-            </ul>
-          </li>
-          
-          <li class="categories"><a href="">Especie</a>
-            <ul class="vertical-menu">
-              <li><a href="">Humano</a></li>
-              <li><a href="">Otra1</a></li>
-              <li><a href="">otra2</a></li>
-              <li><a href="">otra3</a></li>
-            </ul>
-          </li>
-          <li class="categories"><a href="">Por libros</a>
-            <ul class="vertical-menu">
-              <li><a href="">Libro1</a></li>
-              <li><a href="">Libro2</a></li>
-              <li><a href="">Libro3</a></li>
-              <li><a href="">Libro4</a></li>
-            </ul>
-          </li>
-          <li class="categories"><a href="">Ordenar</a>
-            <ul class="vertical-menu">
-              <li><a href="">A - Z</a></li>
-              <li><a href="">Z - A</a></li>
-            </ul>
-          </li>
-        </ul>
-      </section><hr>
-      <div id="charactersContainer" class="charactersCard"></div>   <!--contenedor de info personajes-->
+        <select id="Order" class="select">
+          <option disabled selected>Order</option>
+          <option value="order-up">A - Z</option>
+          <option value="order-down">Z - A</option>>
+        </select>
+      </div>
+      <br><hr> 
+      <div id="charactersContainer" class="charactersCard">
+      </div>   <!--contenedor de info personajes-->
+
     </div>
     <!-- Books page -->
     <div id="fourth-page" class="books-page" style= "display: none;">
@@ -116,7 +102,7 @@
           </li>
         </ul>
       </section><hr>   
-        <section id="booksContainer" class="booksCard">aquí va la info <br><br><br><br><br><br><br><br><br><br></section>
+      <section id="booksContainer" class="booksCard">aquí va la info <br><br><br><br><br><br><br><br><br><br></section>
     </div>
     <script src="main.js" type="module"></script>
     </html>

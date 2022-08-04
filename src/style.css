@@ -97,77 +97,44 @@ body{
   
 }
 
-  .horizontal-menu{
-    list-style: none;
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    gap: 4rem;
-    padding: 0%;
-  }
-
-  .horizontal-menu > li > a{
-    display: block;
-    padding: 15px 20px;
-    color: white;
-    text-decoration: none;
-  }
-
-  .categories{
+.select{
   background-color: #B69350;
-  border-radius: 10px;
+  border-radius: 12px;
   font-family: poppins;
-  }
+  height: 40px;
+  width: 150px;
+  border: none;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
 
-  .vertical-menu{
-    position: absolute;
-    display: none;
-    list-style: none;
-    width: 150px;
-    background-color: #B69350;
-    padding-inline-start: 0%;
-    border-radius: 20px;
-    margin-top: 2px;
-  }
+.select::after{
+content: icon;
+ position:absolute;
+ left: 20px;
+ cursor:pointer;
+ padding: 0 1cm;
+ pointer-events: none;
+ background: #11141B;
+ transition: 25s all ease;
 
-  .horizontal-menu li:hover .vertical-menu{
-    display: block;
-  }
-  
-  .vertical-menu li:hover{
-    background-color: #781F29;
-  }
 
-  .vertical-menu > li > a{
-    display: block;
-    color: white;
-    padding: 15px 15px 15px 20px;
-    text-decoration: none;   
-    flex-flow: row wrap;
-    justify-content:space-evenly; 
-  }
-  
-  .main-characters{
-    display: flex;
-    flex-flow: row wrap;
-    justify-content:space-around;
-    column-gap: 5rem;
-    padding: 25px;
-    text-align:center;
-    font-family: Cinzel Decorative;
-    color: rgba(255, 255, 255, 1);
- }
+}
 
- h3{
-   margin-top: 30px;
-   margin-bottom: 30px;
- }
- 
- hr{
-   width: 93%;
- }
+.select-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content:center;
+  gap: 4rem;
+  padding: 0%;
+}
 
-   /* Books page(fourth-page) */
+hr{
+width: 93%;
+}
+
+/* Books page(fourth-page) */
 
 .books-page{
   background-color: #11141B;
