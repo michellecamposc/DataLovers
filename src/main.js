@@ -1,9 +1,6 @@
 import data from "./data/harrypotter/harry.js";
-
-import { filterData } from "./data.js";
-
-const characters = data.characters;
-console.log(filterData(characters, "Gryffindor"));
+import { sortDataUp, sortDataDown } from "./data.js";
+let characters = data.characters;
 
 //Crear un elemento: document.createElement("elemento")
 //Añadir class a un elemento: element.classList.add("className")
@@ -43,6 +40,26 @@ function showCharacters() {
   charactersContainer.appendChild(divCharacters);
 }
 showCharacters();
+
+//Mostrar ordenado de la A-Z la información
+const orderCharacters = document.getElementById("order");
+orderCharacters.addEventListener("change", function () {
+  if (orderCharacters.value === "order-up") {
+    // que quiero que me muestre
+    sortDataUp();
+  } else if (orderCharacters.value === "order-down") {
+    sortDataDown();
+  }
+});
+
+// const sortBooksDown = books.sort((a, b)=> {
+// if (b.id < a.id) {
+// return -1;
+// }
+// if (b.id > a.id) {
+// return 1;
+// }
+// return 0;
 
 // //.Filter: Crea un nuevo array con todos los elementos que cumplan la condición implementada por la función dada.
 // const potionName = potions.filter((x) => x.id <= "50");
