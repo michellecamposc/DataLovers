@@ -78,137 +78,97 @@ orderCharacters.addEventListener("change", function () {
 });
 // console.log(filterSpecies(characters, "Human"));
 
-//Crear un elemento: document.createElement("elemento")
-//Añadir class a un elemento: element.classList.add("className")
-//Escribir texto en un elemento: element.textContent = texto
-//Añadir un elemento a otro: parent.appendChild("element")
-//Fragmentos de código: document.createDocumentFragment()
+// function filterByHouses(){
+//   const houseSelect = document.getElementById("houses");
+//   houseSelect.addEventListener("change", function(event){ console.log
+//     const byHouse = houseSelect.options[houseSelect.selectIndex];
+//     const resultHouse = filterHouse(characters,byHouse);
 
-// const charactersContainer = document.getElementById("charactersContainer");
-// function showCharacters() {
-//   const divCharacters = document.createElement("div");
-//   characters.forEach((characters) => {
-//     const name = document.createElement("h2");
-//     name.classList.add("divName");
-//     name.textContent = "Name: " + characters.name;
-//     divCharacters.appendChild(name);
+//     const charactersContainer = document.getElementById("charactersContainer");
+//     charactersContainer.innerHTML = "";
 
-//     const gender = document.createElement("p");
-//     gender.classList.add("divGender");
-//     gender.textContent = "Gender: " + characters.gender;
-//     divCharacters.appendChild(gender);
-
-//     const house = document.createElement("p");
-//     house.classList.add("divHouse");
-//     house.textContent = "House: " + characters.house;
-//     divCharacters.appendChild(house);
-
-//     const species = document.createElement("p");
-//     species.classList.add("divSpecies");
-//     species.textContent = "Specie: " + characters.species;
-//     divCharacters.appendChild(species);
-
-//     const birth = document.createElement("p");
-//     birth.classList.add("divBirth");
-//     birth.textContent = "Date birth: " + characters.birth;
-//     divCharacters.appendChild(birth);
-//   });
-//   charactersContainer.appendChild(divCharacters);
+//     const divCharacters = document.createElement("div");
+//     divCharacters.classList.add("divCharacters");
+//     resultHouse.forEach((characters) => {
+//           const card1 = document.createElement("div");
+//           card1.classList.add("divCard1");
+//           divCharacters.appendChild(card1);
+      
+//           const name = document.createElement("h2");
+//           name.classList.add("divName");
+//           name.textContent = "Name: " + characters.name;
+//           card1.appendChild(name);
+      
+//           const gender = document.createElement("p");
+//           gender.classList.add("divGender");
+//           gender.textContent = "Gender: " + characters.gender;
+//           card1.appendChild(gender);
+      
+//           const house = document.createElement("p");
+//           house.classList.add("divHouse");
+//           house.textContent = "House: " + characters.house;
+//           card1.appendChild(house);
+      
+//           const species = document.createElement("p");
+//           species.classList.add("divSpecies");
+//           species.textContent = "Specie: " + characters.species;
+//           card1.appendChild(species);
+      
+//           const birth = document.createElement("p");
+//           birth.classList.add("divBirth");
+//           birth.textContent = "Date birth: " + characters.birth;
+//           card1.appendChild(birth);
+//         });
+//         charactersContainer.appendChild(divCharacters);
+//         console.log(resultHouse);
+//   })
 // }
-// showCharacters();
+// window.addEventListener("load", filterByHouses);
 
-function filterByHouses(){
-  const houseSelect = document.getElementById("houses");
-  houseSelect.addEventListener("change", function(){
-    const byHouse = houseSelect.options[houseSelect.selectIndex];
-    const resultHouse = filterHouse(characters,byHouse);
-
-    const charactersContainer = document.getElementById("charactersContainer");
-    charactersContainer.innerHTML = "";
-
-    const divCharacters = document.createElement("div");
-    divCharacters.classList.add("divCharacters");
-    resultHouse.forEach((characters) => {
-          const card1 = document.createElement("div");
-          card1.classList.add("divCard1");
-          divCharacters.appendChild(card1);
-      
-          const name = document.createElement("h2");
-          name.classList.add("divName");
-          name.textContent = "Name: " + characters.name;
-          card1.appendChild(name);
-      
-          const gender = document.createElement("p");
-          gender.classList.add("divGender");
-          gender.textContent = "Gender: " + characters.gender;
-          card1.appendChild(gender);
-      
-          const house = document.createElement("p");
-          house.classList.add("divHouse");
-          house.textContent = "House: " + characters.house;
-          card1.appendChild(house);
-      
-          const species = document.createElement("p");
-          species.classList.add("divSpecies");
-          species.textContent = "Specie: " + characters.species;
-          card1.appendChild(species);
-      
-          const birth = document.createElement("p");
-          birth.classList.add("divBirth");
-          birth.textContent = "Date birth: " + characters.birth;
-          card1.appendChild(birth);
-        });
-        charactersContainer.appendChild(divCharacters);
-        console.log(resultHouse);
-  })
-}
-window.addEventListener("load", filterByHouses);
-
-// var x = document.getElementById("houses").options[2];
-// console.log(x);
 
 // //  707 personajes
 // function createCharacters(){
-//   document.getElementById("houses").addEventListener("change", showCharacters, false);
+//   document.getElementById("houses").addEventListener("change", showCharacters);
 // }
 // function showCharacters(){
 //   const resultHouse = filterHouse(characters);
 //   const divCharacters = document.createElement("div");
+//   divCharacters.classList.add("divCharacters");
 //   resultHouse.forEach((characters) => {
 //     const card1 = document.createElement("div");
-//     card1.classList.add("divCard1");
-//     divCharacters.appendChild(card1);
-
-//     const name = document.createElement("h2");
-//     name.classList.add("divName");
-//     name.textContent = "Name: " + characters.name;
-//     card1.appendChild(name);
-
-//     const gender = document.createElement("p");
-//     gender.classList.add("divGender");
-//     gender.textContent = "Gender: " + characters.gender;
-//     card1.appendChild(gender);
-
-//     const house = document.createElement("p");
-//     house.classList.add("divHouse");
-//     house.textContent = "House: " + characters.house;
-//     card1.appendChild(house);
-
-//     const species = document.createElement("p");
-//     species.classList.add("divSpecies");
-//     species.textContent = "Specie: " + characters.species;
-//     card1.appendChild(species);
-
-//     const birth = document.createElement("p");
-//     birth.classList.add("divBirth");
-//     birth.textContent = "Date birth: " + characters.birth;
-//     card1.appendChild(birth);
-//   });
-//   charactersContainer.appendChild(divCharacters);
+//           card1.classList.add("divCard1");
+//           divCharacters.appendChild(card1);
+      
+//           const name = document.createElement("h2");
+//           name.classList.add("divName");
+//           name.textContent = "Name: " + characters.name;
+//           card1.appendChild(name);
+      
+//           const gender = document.createElement("p");
+//           gender.classList.add("divGender");
+//           gender.textContent = "Gender: " + characters.gender;
+//           card1.appendChild(gender);
+      
+//           const house = document.createElement("p");
+//           house.classList.add("divHouse");
+//           house.textContent = "House: " + characters.house;
+//           card1.appendChild(house);
+      
+//           const species = document.createElement("p");
+//           species.classList.add("divSpecies");
+//           species.textContent = "Specie: " + characters.species;
+//           card1.appendChild(species);
+      
+//           const birth = document.createElement("p");
+//           birth.classList.add("divBirth");
+//           birth.textContent = "Date birth: " + characters.birth;
+//           card1.appendChild(birth);
+//         });
+//         charactersContainer.appendChild(divCharacters);
 //   console.log(characters);
   
 //     }
-//     window.addEventListener("load", createCharacters, false);
+//     window.addEventListener("load", createCharacters);
 
 
 
