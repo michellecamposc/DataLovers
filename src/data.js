@@ -1,3 +1,5 @@
+// Historia de usuario de personajes
+//Función de filtrar la data de personajes
 export const filterData = (characters, condition) => {
   const charactersHouse = characters.filter(
     (element) => element.house == condition
@@ -7,24 +9,17 @@ export const filterData = (characters, condition) => {
 
 //Función para ordernar de la A a la Z
 export const sortDataUp = (characters) => {
-  let filterByAZ = characters.sort((a, b) => a.name.localCompare(b.name));
+  let filterByAZ = characters.sort((a, b) => a.name.localeCompare(b.name));
+  console.log(filterByAZ);
   return filterByAZ;
 };
 
 //Función para ordenar de la Z a la A
 export const sortDataDown = (characters) => {
-  let filterByZA = characters.sort((a, b) => b.name.localCompare(a.name));
+  let filterByZA = characters.sort((a, b) => b.name.localeCompare(a.name));
+  console.log(filterByZA);
   return filterByZA;
 };
-
-/*function sortDataDown(characters) {
-  let resultZA = characters.sort((a, b) => {
-    a.name > b.name ? -1 : 1;
-  });
-  return resultZA;
-}
-
-export { sortDataDown };*/
 
 // const filterData = (data) => {
 //     const potionName = data.filter((x) => x.name <= "Drowsiness Draught");
@@ -35,32 +30,6 @@ export { sortDataDown };*/
 //       //Acá retornaremos la poción que quisieran ordenar los usuarios
 //       return element.name(condition);
 //     });*/
-
-// const sortBooksUp = books.sort((a, b)=> {
-//     if (a.id < b.id) {
-//         return -1;
-//     }
-//     if (a.id > b.id) {
-//         return 1;
-//     }
-//     return 0;
-
-// });
-// console.log(sortBooksUp);
-
-// const sortBooksDown = books.sort((a, b)=> {
-// if (b.id < a.id) {
-// return -1;
-// }
-// if (b.id > a.id) {
-// return 1;
-// }
-// return 0;
-
-// });
-// console.log(sortBooksDown);
-
-// export {sortBooksUp,sortBooksDown};
 
 // const filterData = () => {
 //     let result = characters.filter(x => x.gender === "Male" ? x.gender === this.value : x.gender !== "Male")
