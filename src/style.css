@@ -134,6 +134,33 @@ hr{
 width: 93%;
 }
 
+.charactersCard{
+  color: white;
+}
+
+.divCard1{
+  font-family: Cinzel Decorative;
+  color: white;
+  display: flex;
+  flex-flow:column wrap;
+  border: 4px solid #ffffff;
+  border-radius: 5px;
+  border-color: #F2E0C5;
+  background: #66242B;
+  width: 25%;
+  padding: 2%;
+  margin: 1%;
+  font-size: 12px;
+
+}
+
+.divCharacters{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 2%;
+  
+}
 /* Books page(fourth-page) */
 
 .books-page{

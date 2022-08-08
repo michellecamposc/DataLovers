@@ -1,12 +1,25 @@
 // const characters = data.characters;
-export const filterData = (characters, condition) => {
+
+export const filterHouse = (characters, condition) => {
   const charactersHouse = characters.filter(
     (element) => element.house == condition
   );
   return charactersHouse;
 };
 
+export const filterSpecies = (characters, condition) => {
+  const charactersSpecies = characters.filter(
+    (element) => element.species == condition
+  );
+  return charactersSpecies;
+};
+
+
+
+
 //Filtros para personajes:
+
+
 //Nombre, Genero, Casa, especies, fec. nac
 
 // const filterData = (data) => {
