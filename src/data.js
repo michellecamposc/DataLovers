@@ -7,6 +7,20 @@ export const filterData = (characters, condition) => {
   return charactersHouse;
 };
 
+export const filterHouse = (characters, condition) => {
+  const charactersHouse = characters.filter(
+    (element) => element.house == condition
+  );
+  return charactersHouse;
+};
+
+export const filterSpecies = (characters, condition) => {
+  const charactersSpecies = characters.filter(
+    (element) => element.species == condition
+  );
+  return charactersSpecies;
+};
+
 //Función para ordernar de la A a la Z
 export const sortDataUp = (characters) => {
   let filterByAZ = characters.sort((a, b) => a.name.localeCompare(b.name));
