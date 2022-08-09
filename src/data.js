@@ -1,12 +1,3 @@
-
-//Función de filtrar la data de personajes
-// export const filterData = (characters, condition) => {
-//   const charactersHouse = characters.filter(
-//     (element) => element.house == condition
-//   );
-//   return charactersHouse;
-// };
-
 //Funtion filter by houses
 export const filterHouse = (characters, condition) => {
   const charactersHouse = characters.filter(
@@ -16,9 +7,16 @@ export const filterHouse = (characters, condition) => {
 };
 
 //Funtion filter by species
-export const filterSpecies = (characters, condition) => {
+export const filterHuman = (characters, condition) => {
   const charactersSpecies = characters.filter(
     (element) => element.species == condition
+  );
+  return charactersSpecies;
+};
+
+export const filterMagical = (characters, condition) => {
+  const charactersSpecies = characters.filter(
+    (element) => element.species !== condition
   );
   return charactersSpecies;
 };

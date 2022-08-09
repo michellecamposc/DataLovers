@@ -4,7 +4,8 @@ import {
   sortDataUp,
   sortDataDown,
   filterHouse,
-  filterSpecies,
+  filterHuman,
+  filterMagical,
 } from "./data.js";
 
 const characters = data.characters;
@@ -18,14 +19,13 @@ const books = data.books;
 // console.log(filterHouse(characters, "Hufflepuff"));
 // console.log(filterSpecies(characters, "Human"));
 
-//Creación de elementos HTML
+//Creating HTML elements
 const charactersContainer = document.getElementById("charactersContainer");
 function getCards(arrData) {
   const arrResult = [];
+  const divCharacter = document.createElement("div");
+  divCharacter.classList.add("divCharacters");
   arrData.forEach((element) => {
-    const divCharacter = document.createElement("div");
-    divCharacter.classList.add("divCharacters");
-
     const card1 = document.createElement("div");
     card1.classList.add("divCard1");
     divCharacter.appendChild(card1);
@@ -55,12 +55,17 @@ function getCards(arrData) {
     birth.textContent = "Date birth: " + element.birth;
     card1.appendChild(birth);
 
+    const ancestry = document.createElement("p");
+    ancestry.classList.add("divAncestry");
+    ancestry.textContent = "Ancestry: " + element.ancestry;
+    card1.appendChild(ancestry);
+
     arrResult.push(divCharacter);
   });
   return arrResult;
 }
 
-//Función ShowCharacters
+//ShowCharacters function
 function showCharacters() {
   const divCharacters = document.createElement("div");
   divCharacters.classList.add("divCharacters");
@@ -93,6 +98,11 @@ function showCharacters() {
     birth.classList.add("divBirth");
     birth.textContent = "Date birth: " + characters.birth;
     card1.appendChild(birth);
+
+    const ancestry = document.createElement("p");
+    ancestry.classList.add("divAncestry");
+    ancestry.textContent = "Ancestry: " + characters.ancestry;
+    card1.appendChild(ancestry);
   });
   charactersContainer.appendChild(divCharacters);
 }
@@ -109,7 +119,6 @@ orderCharacters.addEventListener("change", function () {
     sortDataDown(characters);
     charactersContainer.innerHTML = " ";
     showCharacters();
-    
   }
 });
 
@@ -147,6 +156,26 @@ houseSelect.addEventListener("change", function () {
   } else if (houseSelect.value === "AllHouses") {
     charactersContainer.innerHTML = " ";
     showCharacters();
+  }
+});
+
+//Filter by species
+const specieSelect = document.getElementById("species");
+specieSelect.addEventListener("change", function () {
+  if (specieSelect.value === "Humans") {
+    charactersContainer.innerHTML = " ";
+    const humanSpecie = filterHuman(characters, "Human");
+    const humanResult = getCards(humanSpecie);
+    humanResult.forEach((element) => {
+      charactersContainer.appendChild(element);
+    });
+  } else if (specieSelect.value === "Magical") {
+    charactersContainer.innerHTML = " ";
+    const otherSpecie = filterMagical(characters, "Human");
+    const otherResult = getCards(otherSpecie);
+    otherResult.forEach((element) => {
+      charactersContainer.appendChild(element);
+    });
   }
 });
 
