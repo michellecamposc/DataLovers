@@ -14,6 +14,7 @@ export const filterHouse = (characters, condition) => {
   );
   return charactersHouse;
 };
+
 //Funtion filter by species
 export const filterSpecies = (characters, condition) => {
   const charactersSpecies = characters.filter(
