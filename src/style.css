@@ -15,7 +15,7 @@ body{
   color: rgba(255, 255, 255, 1);
   font-size: 35px;
   font-family: Cinzel Decorative;
-  margin-top: 90px;
+  margin-top: 50px;
   margin-bottom: 0;
   position: relative;
   text-align: center;
@@ -25,7 +25,7 @@ body{
  p{
   font-family: poppins;
   color: rgba(255, 255, 255, 1);
-  font-size: 19px;
+  font-size: 22px;
   margin-top: 5px;
   margin-bottom: 20px;
  }
@@ -41,6 +41,7 @@ body{
     flex-flow: row wrap;
     justify-content:space-evenly;
     text-align: center;
+    margin-top: 4%;
     font-family: Cinzel Decorative;
     color: rgba(255, 255, 255, 1);
  }
@@ -81,6 +82,7 @@ body{
     padding: 30px;
     min-height: 100vh;
     padding: 40px;
+    display: none;
 }
 
 .first-bar{
@@ -131,18 +133,21 @@ width: 93%;
   border-color: #F2E0C5;
   background: #66242B;
   width: 25%;
-  padding: 2%;
+  padding: 1%;
   margin: 1%;
   font-size: 12px;
-
 }
 
+.divCard1 p{
+  font-size: 16px;
+  margin: 1%;
+}
 .divCharacters{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
   margin-top: 2%;
-
+  
 }
 
 /* Books page(fourth-page) */
@@ -152,6 +157,7 @@ width: 93%;
   padding: 30px;
   min-height: 100vh;
   padding: 40px;
+  display: none;
 }
 
 .booksCard{
