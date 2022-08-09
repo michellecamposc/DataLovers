@@ -1,7 +1,6 @@
 import data from "./data/harrypotter/harry.js";
-import { sortDataUp, sortDataDown } from "./data.js";
+import { filterGryffindorHouse, sortDataUp, sortDataDown } from "./data.js";
 let characters = data.characters;
-
 //Crear un elemento: document.createElement("elemento")
 //Añadir class a un elemento: element.classList.add("className")
 //Escribir texto en un elemento: element.textContent = texto
@@ -61,9 +60,15 @@ orderCharacters.addEventListener("change", function () {
   }
 });
 
-// //.Filter: Crea un nuevo array con todos los elementos que cumplan la condición implementada por la función dada.
-// const potionName = potions.filter((x) => x.id <= "50");
-// //console.log(potionName);
+//Mostrar solo las casas de Gryffindor
+const houseSelect = document.getElementById("houses");
+houseSelect.addEventListener("change", function () {
+  if (houseSelect.value === "Gryffindor") {
+    filterGryffindorHouse(characters);
+    charactersContainer.innerHTML = " ";
+    showCharacters();
+  }
+});
 
 // const booksYear = data.books;
 // console.log(data.books[5].id);

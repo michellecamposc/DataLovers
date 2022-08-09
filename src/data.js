@@ -1,9 +1,8 @@
 // Historia de usuario de personajes
-//Función de filtrar la data de personajes
-export const filterData = (characters, condition) => {
-  const charactersHouse = characters.filter(
-    (element) => element.house == condition
-  );
+//Función de filtrar las casas de los personajes
+export const filterGryffindorHouse = (characters) => {
+  const charactersHouse = characters.filter((e) => e.house == "Gryffindor");
+  console.log(charactersHouse);
   return charactersHouse;
 };
 
