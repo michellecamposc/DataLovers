@@ -148,6 +148,10 @@ hr {
   margin-top: 2%;
 }
 
+.imageGryffindor{
+  background-image: url(.src/images/casas/gryffindor.jpg);
+}
+
 /* Books page(fourth-page) */
 
 .books-page {
