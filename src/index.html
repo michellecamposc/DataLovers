@@ -15,51 +15,54 @@
     <div id="first-page" class="first-page">
       <section class="welcome">
           <img alt="Logo de la página" src="images/homepage/logo.png" width="70"/>
-        <h1>Bienvenidos a la plataforma 9 ¾</h1>
-        <p>Explora aquí el mundo de Harry Potter</p>
+        <h1>Welcome to platform 9 ¾</h1>
+        <p>Explore the magic world of Harry Potter here</p>
       </section>
       <section class ="menu">
         <article class="boxes">
             <img alt="Personajes" src="images/homepage/personajes.png" class="width-img"/>
-            <button type="button" class="home-buttons" id="first-button">Personajes</button>
+            <button type="button" class="home-buttons" id="first-button">Characters</button>
         </article>
         <article class="boxes">
           <img alt="Hechizos" src="images/homepage/Hechizos.png" class="width-img"/> 
-          <button class=home-buttons>Hechizos</button>
+          <button class=home-buttons>Spells</button>
         </article>
         <article class="boxes">
           <img alt="Pociones" src="images/homepage/pociones.png" class="width-img"/>
-          <button class="home-buttons">Pociones</button>
+          <button class="home-buttons">Potions</button>
         </article>
         <article class="boxes">
           <img alt="Libros" src="images/homepage/libros.png" class="width-img"/>
-          <button class="home-buttons" id="fourth-button">libros</button>
+          <button class="home-buttons" id="fourth-button">Books</button>
         </article>
       </section>
     </div>
     <!-- Characters page -->
-    <div id="second-page" class="second-page" style= "display: none;">
+    <div id="second-page" class="second-page">
       <div>
         <nav class="first-bar">
           <img alt="Logo de la página" src="images/homepage/logo.png" width="80"/>
-          <a href="">Hechizos</a>
-          <a href="">Pociones</a>
-          <a href="">Libros</a>
+          <a href="">Spells</a>
+          <a href="">Potions</a>
+          <a href="">Books</a>
         </nav>
       </div>
-      
+      <hr> 
+      <!--Imagen de la página de personajes-->
+      <section class="friends-container">
+          <img alt="Welcome to all characters" src="images/homepage/charactersphoto.png" class="friend-img"/>
+          <h2>Harry Potter Characters</h2>
+          <p> Discover all the Harry Potter characters and learn more about them and their world!</p>
+      </section>
+
       <!-- Categorias -->
       <div class="select-container">
-        <select id="characters" class="select">
-          <option disabled selected>All characters</option>
-        </select>
-  
         <select id="houses" class="select">
-          <option disabled selected>Houses</option>
+          <option value="AllHouses">All houses</option>
           <option value="Gryffindor">Gryffindor</option>
           <option value="Slytherin">Slytherin</option>
           <option value="Ravenclaw">Ravenclaw</option>
-          <option value="Hufflepuff">Hufflepuff</option>          
+          <option value="Hufflepuff">Hufflepuff</option>            
         </select>
          
         <select id="species" class="select">
@@ -70,39 +73,37 @@
         </select>
           
         <select id="order" class="select">
-          <option disabled selected>Order</option>
+          <option disabled selected>Sort by</option>
           <option value="order-up">A - Z</option>
-          <option value="order-down">Z - A</option>>
+          <option value="order-down">Z - A</option>
         </select>
       </div>
       <br><hr> 
 
+      <!--contenedor de info personajes-->
       <div id="charactersContainer" class="charactersCard">
         <div class="div"></div>
-      </div>   <!--contenedor de info personajes-->
+      </div>  
 
-    </div>
+     </div>
+
     <!-- Books page -->
-    <div id="fourth-page" class="books-page" style= "display: none;">
+    <div id="fourth-page" class="books-page">
       <nav class="first-bar">
         <img alt="Logo de la página" src="images/homepage/logo.png" width="70" />
-        <a href="">Personajes</a>
-        <a href="">Hechizos</a>
-        <a href="">Pociones</a>
+        <a href="">Characters</a>
+        <a href="">Spells</a>
+        <a href="">Potions</a>
       </nav>
       <h1>Libros de la Saga</h1><br>
-      <!-- Categorias -->
+      
+      <!-- Categories -->
       <section>
-        <ul class="horizontal-menu">
-          <li class="categories"><a href="">Todos los libros</a>
-         </li>
-          <li class="categories"><a href="">Ordenar por fecha</a>
-            <ul class="vertical-menu">
-              <li><a href="">Ascendente</a></li>
-              <li><a href="">Descendente</a></li>
-            </ul>
-          </li>
-        </ul>
+        <select id="order" class="select">
+          <option value="AllBooks">All books view</option>
+          <option value="order-up">From oldest</option>
+          <option value="order-down">Most recent</option>>
+        </select>
       </section><hr>   
       <section id="booksContainer" class="booksCard">aquí va la info <br><br><br><br><br><br><br><br><br><br></section>
     </div>
