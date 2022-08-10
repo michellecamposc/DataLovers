@@ -108,6 +108,7 @@ p {
   color: white;
   text-align: center;
 }
+
 .select-container {
   display: flex;
   flex-flow: row wrap;
@@ -129,9 +130,9 @@ hr {
   border: 4px solid #ffffff;
   border-radius: 5px;
   border-color: #f2e0c5;
-  background: #66242b;
-  width: 25%;
-  padding: 1%;
+  /* background: #66242b; */
+  width: 30%;
+  padding: 2%;
   margin: 1%;
   font-size: 12px;
 }

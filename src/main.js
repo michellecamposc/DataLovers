@@ -13,12 +13,6 @@ const potions = data.potions;
 const spells = data.spells;
 const books = data.books;
 
-// console.log(filterHouse(characters, "Gryffindor"));
-// console.log(filterHouse(characters, "Slytherin"));
-// console.log(filterHouse(characters, "Ravenclaw"));
-// console.log(filterHouse(characters, "Hufflepuff"));
-// console.log(filterSpecies(characters, "Human"));
-
 //Creating HTML elements
 const charactersContainer = document.getElementById("charactersContainer");
 function getCards(arrData) {
