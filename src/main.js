@@ -1,14 +1,19 @@
 import data from "./data/harrypotter/harry.js";
-
 import {
   sortDataUp,
   sortDataDown,
   filterHouse,
   filterHuman,
   filterMagical,
+  recentBooks,
+  olderBooks,
 } from "./data.js";
 
+//Here is the first page (Characters)
 const characters = data.characters;
+const potions = data.potions;
+const spells = data.spells;
+const books = data.books;
 
 //Creating HTML elements
 const charactersContainer = document.getElementById("charactersContainer");
@@ -198,6 +203,61 @@ specieSelect.addEventListener("change", function () {
     otherResult.forEach((element) => {
       charactersContainer.appendChild(element);
     });
+  }
+});
+
+//Here is the four page (Books)
+const books = data.books;
+const booksContainer = document.getElementById("books-container");
+//Function show books
+function showHarryBooks() {
+  const divBook = document.createElement("div");
+  divBook.classList.add("divBook");
+  books.forEach((books) => {
+    const bookCard = document.createElement("div");
+    bookCard.classList.add("bookCard");
+    divBook.appendChild(bookCard);
+
+    const bookImg = document.createElement("img");
+    bookImg.classList.add("divImgBook");
+    bookImg.src = books.image;
+    bookCard.appendChild(bookImg);
+
+    const title = document.createElement("h2");
+    title.classList.add("divTitle");
+    title.textContent = "Title: " + books.title;
+    bookCard.appendChild(title);
+
+    const author = document.createElement("p");
+    author.classList.add("divAuthor");
+    author.textContent = "Author: " + books.author;
+    bookCard.appendChild(author);
+
+    const releaseDay = document.createElement("p");
+    releaseDay.classList.add("divReleaseDay");
+    releaseDay.textContent = "Release day: " + books.releaseDay;
+    bookCard.appendChild(releaseDay);
+
+    const description = document.createElement("p");
+    description.classList.add("divDescription");
+    description.textContent = "Description: " + books.description;
+    bookCard.appendChild(description);
+  });
+  booksContainer.appendChild(divBook);
+}
+showHarryBooks();
+
+//Sort books function
+const sortBooks = document.getElementById("books");
+sortBooks.addEventListener("change", function () {
+  if (sortBooks.value === "order-oldest") {
+    olderBooks(books);
+    booksContainer.innerHTML = " ";
+    showHarryBooks();
+  } else if (sortBooks.value === "order-recent") {
+    recentBooks(books);
+    booksContainer.innerHTML = " ";
+    showHarryBooks();
   }
 });
 

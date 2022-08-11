@@ -47,12 +47,18 @@
           <a href="">Books</a>
         </nav>
       </div>
-      <h1>Harry Potter Characters</h1><br><br><br>
-
+      <!--Imagen de la página de personajes-->
+      <section class="friends-container">
+          <img alt="Welcome to all characters" src="images/homepage/characterspage.png" class="friend-img"/>
+          <div>
+            <h2>Harry Potter Characters</h2>
+            <p> Discover all the Harry Potter characters and learn more about them and their world!</p>
+          </div>
+      </section>
       <!-- Categorias -->
       <div class="select-container">
         <select id="houses" class="select">
-          <option value="AllHouses">Houses</option>
+          <option value="AllHouses">All houses</option>
           <option value="Gryffindor">Gryffindor</option>
           <option value="Slytherin">Slytherin</option>
           <option value="Ravenclaw">Ravenclaw</option>
@@ -66,12 +72,14 @@
         </select>
           
         <select id="order" class="select">
-          <option disabled selected>Order</option>
+          <option disabled selected>Sort by</option>
           <option value="order-up">A - Z</option>
-          <option value="order-down">Z - A</option>>
+          <option value="order-down">Z - A</option>
         </select>
       </div>
-      <br><hr> 
+      <br>
+
+      <!--contenedor de info personajes-->
       <div id="charactersContainer" class="charactersCard">
         <!--Characters Container-->
       </div>
@@ -85,16 +93,27 @@
         <a href="">Spells</a>
         <a href="">Potions</a>
       </nav>
-      <h1>Libros de la Saga</h1><br>
-      <!-- Categories -->
-      <section>
-        <select id="order" class="select">
-          <option value="AllBooks">All books view</option>
-          <option value="order-up">From oldest</option>
-          <option value="order-down">Most recent</option>>
+
+       <!--Imagen de la página de libros-->
+       <section class="books-container">
+        <img alt="Harry Potter Books" src="images/homepage/bookpage.png" class="books-img"/>
+        <div>
+          <h2>Harry Potter Books</h2>
+          <p> The first Harry Potter book was published in 1997 to immediate popular and critical acclaim. Six further best-selling books, three companion books, a playscript and two screenplays have since followed.</p>
+        </div>
+        </section>
+      
+      <!-- Category of books -->
+      <section class="books-select">
+        <select id="books" class="select-books">
+          <option disabled selected> All books </option>
+          <option value="order-oldest">From oldest</option>
+          <option value="order-recent">Most recent</option>>
         </select>
-      </section><hr>   
-      <section id="booksContainer" class="booksCard">aquí va la info <br><br><br><br><br><br><br><br><br><br></section>
+      </section>   
+
+      <!--Contenedor de info de los libros-->
+      <section id="books-container" class="books-card"> </section>
     </div>
     <script src="main.js" type="module"></script>
     </html>

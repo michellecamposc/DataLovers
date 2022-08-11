@@ -78,9 +78,7 @@ p {
 
 .second-page {
   background-color: #11141b;
-  padding: 30px;
   min-height: 100vh;
-  padding: 40px;
   display: none;
 }
 
@@ -88,6 +86,7 @@ p {
   margin-left: 38px;
   display: flex;
   flex-flow: row wrap;
+  padding: 40px;
 }
 
 .first-bar > a {
@@ -98,30 +97,58 @@ p {
 }
 
 .select {
-  background-color: #b69350;
-  border-radius: 12px;
+  background-color: rgba(102, 36, 43, 1);
+  border-radius: 14px;
   font-family: poppins;
   height: 40px;
   width: 150px;
-  border: none;
+  border-color: #ffffff;
   font-size: 15px;
   color: white;
   text-align: center;
 }
-
 .select-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  gap: 4rem;
+  gap: 6rem;
   padding: 0%;
 }
-
-hr {
-  width: 93%;
+.friends-container {
+  display: flex;
+  position: relative;
+  flex-flow: row wrap;
+  margin-top: 50px;
+  margin-bottom: 100px;
+  justify-content: center;
+  align-items: center;
 }
 
-/*Characters Card*/
+.friends-container h2 {
+  font-family: Cinzel Decorative;
+  color: #66242b;
+  font-size: 58px;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  text-align: center;
+}
+
+.friends-container p {
+  font-family: poppins;
+  color: rgba(17, 20, 27, 0.76);
+  font-size: 26px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+}
+
+.friend-img {
+  height: 100%;
+  width: 100%;
+}
+
+/*Characters Card: SECOND PAGE*/
 .divCard1 {
   font-family: Cinzel Decorative;
   color: white;
@@ -175,18 +202,75 @@ hr {
 }
 
 /* Books page(fourth-page) */
-
 .books-page {
   background-color: #11141b;
-  padding: 30px;
   min-height: 100vh;
-  padding: 40px;
   display: none;
 }
 
-.booksCard {
-  background-color: white;
+.books-container {
+  display: flex;
+  position: relative;
+  flex-flow: row wrap;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.books-container h2 {
+  font-family: Cinzel Decorative;
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  text-align: center;
+}
+
+.books-container p {
+  font-family: poppins;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+}
+
+.books-img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.select-books {
+  background-color: rgba(89, 85, 174, 1);
+  border-radius: 14px;
+  font-family: poppins;
+  height: 40px;
+  width: 150px;
+  border-color: #ffffff;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+
+.books-select {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0%;
+  margin-left: 60px;
+}
+
+/* Contenedor de los libros*/
+
+.books-card {
   width: 100%;
   height: 100%;
   color: black;
+}
+
+.divImgBook {
+  width: 400px;
+  height: 600px;
+  border-radius: 20px;
 }

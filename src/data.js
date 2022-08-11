@@ -24,13 +24,26 @@ export const filterMagical = (characters, condition) => {
 //Function to order from A to Z
 export const sortDataUp = (characters) => {
   let filterByAZ = characters.sort((a, b) => a.name.localeCompare(b.name));
-  console.log(filterByAZ);
   return filterByAZ;
 };
 
 //Function to order from Z to A
 export const sortDataDown = (characters) => {
   let filterByZA = characters.sort((a, b) => b.name.localeCompare(a.name));
-  console.log(filterByZA);
   return filterByZA;
+};
+
+//Page four
+
+//Function sort Books (oldest)
+export const olderBooks = (books) => {
+  let lastBook = books.sort((a, b) => a.id > b.id);
+  return lastBook;
+};
+console.log(olderBooks);
+
+//Function sort Books (recent)
+export const recentBooks = (books) => {
+  let firstBook = books.sort((a, b) => b.id < a.id);
+  return firstBook;
 };
