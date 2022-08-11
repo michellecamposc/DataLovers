@@ -81,6 +81,7 @@ p {
   min-height: 100vh;
   display: none;
 }
+
 .first-bar {
   margin-left: 38px;
   display: flex;
@@ -110,16 +111,17 @@ p {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  gap: 4rem;
+  gap: 6rem;
   padding: 0%;
 }
-
 .friends-container {
   display: flex;
   position: relative;
   flex-flow: row wrap;
   margin-top: 50px;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+  justify-content: center;
+  align-items: center;
 }
 
 .friends-container h2 {
@@ -146,11 +148,7 @@ p {
   width: 100%;
 }
 
-hr {
-  width: 93%;
-}
-
-/*Characters Card*/
+/*Characters Card: SECOND PAGE*/
 .divCard1 {
   font-family: Cinzel Decorative;
   color: white;
@@ -159,9 +157,9 @@ hr {
   border: 4px solid #ffffff;
   border-radius: 5px;
   border-color: #f2e0c5;
-  background: #66242b;
-  width: 25%;
-  padding: 1%;
+  /* background: #66242b; */
+  width: 30%;
+  padding: 2%;
   margin: 1%;
   font-size: 12px;
 }
@@ -178,18 +176,75 @@ hr {
 }
 
 /* Books page(fourth-page) */
-
 .books-page {
   background-color: #11141b;
-  padding: 30px;
   min-height: 100vh;
-  padding: 40px;
   display: none;
 }
 
-.booksCard {
-  background-color: white;
+.books-container {
+  display: flex;
+  position: relative;
+  flex-flow: row wrap;
+  margin-top: 40px;
+  margin-bottom: 70px;
+  justify-content: center;
+  align-items: center;
+}
+
+.books-container h2 {
+  font-family: Cinzel Decorative;
+  color: white;
+  font-size: 50px;
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  text-align: center;
+}
+
+.books-container p {
+  font-family: poppins;
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+}
+
+.books-img {
+  height: 100%;
+  max-width: 100%;
+}
+
+.select-books {
+  background-color: rgba(89, 85, 174, 1);
+  border-radius: 14px;
+  font-family: poppins;
+  height: 40px;
+  width: 150px;
+  border-color: #ffffff;
+  font-size: 15px;
+  color: white;
+  text-align: center;
+}
+
+.books-select {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 0%;
+  margin-left: 60px;
+}
+
+/* Contenedor de los libros*/
+
+.books-card {
   width: 100%;
   height: 100%;
   color: black;
+}
+
+.divImgBook {
+  width: 400px;
+  height: 600px;
+  border-radius: 20px;
 }
