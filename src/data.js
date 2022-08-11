@@ -1,12 +1,12 @@
 //Funtion filter by houses
-export const filterHouse = (characters, condition) => {
+export const filterHouse = (characters, house) => {
   const charactersHouse = characters.filter(
-    (element) => element.house == condition
+    (element) => element.house === house
   );
   return charactersHouse;
 };
 
-//Funtion filter by species
+//Funtion filter by species (Humans ands magical ones)
 export const filterHuman = (characters, condition) => {
   const charactersSpecies = characters.filter(
     (element) => element.species == condition

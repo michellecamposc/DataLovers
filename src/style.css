@@ -130,11 +130,37 @@ hr {
   border: 4px solid #ffffff;
   border-radius: 5px;
   border-color: #f2e0c5;
-  /* background: #66242b; */
   width: 30%;
   padding: 2%;
   margin: 1%;
   font-size: 12px;
+  /* background-image: url(images/casas/escudo.png); */
+  /* background-position: right; */
+  background-repeat: repeat-y;
+
+  background-size: 100%;
+}
+
+.gryffindorCard {
+  background-image: url(images/casas/gryffindor.jpg);
+}
+
+.slytherinCard {
+  background-image: url(images/casas/slytherin.jpg);
+}
+
+.ravenclawCard {
+  background-image: url(images/casas/ravenclaw.jpg);
+}
+
+.hufflepuffCard {
+  background-image: url(images/casas/hufflepuff.jpg);
+}
+
+.nullCard {
+  background-image: url(images/casas/escudo.png);
+  background-size: 30%;
+  background-position: right;
 }
 
 .divCard1 p {
@@ -146,10 +172,6 @@ hr {
   flex-flow: row wrap;
   justify-content: center;
   margin-top: 2%;
-}
-
-.imageGryffindor{
-  background-image: url(.src/images/casas/gryffindor.jpg);
 }
 
 /* Books page(fourth-page) */
