@@ -189,22 +189,22 @@ function showHarryBooks() {
     bookCard.appendChild(bookImg);
 
     const title = document.createElement("h2");
-    title.classList.add("divTitle");
+    title.classList.add("divBookTitle");
     title.textContent = "Title: " + books.title;
     bookCard.appendChild(title);
 
     const author = document.createElement("p");
-    author.classList.add("divAuthor");
+    author.classList.add("divContent");
     author.textContent = "Author: " + books.author;
     bookCard.appendChild(author);
 
     const releaseDay = document.createElement("p");
-    releaseDay.classList.add("divReleaseDay");
+    releaseDay.classList.add("divContent");
     releaseDay.textContent = "Release day: " + books.releaseDay;
     bookCard.appendChild(releaseDay);
 
     const description = document.createElement("p");
-    description.classList.add("divDescription");
+    description.classList.add("divContent");
     description.textContent = "Description: " + books.description;
     bookCard.appendChild(description);
   });
@@ -247,8 +247,3 @@ function booksPage() {
   // Show the second page
   document.getElementById("fourth-page").style.display = "block";
 }
-
-//Crear un elemento: document.createElement("elemento")
-//Añadir class a un elemento: element.classList.add("className")
-//Escribir texto en un elemento: element.textContent = texto
-//Añadir un elemento a otro: parent.appendChild("element")

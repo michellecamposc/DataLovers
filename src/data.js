@@ -37,10 +37,10 @@ export const sortDataDown = (characters) => {
 
 //Function sort Books (oldest)
 export const olderBooks = (books) => {
-  let lastBook = books.sort((a, b) => a.id > b.id);
-  return lastBook;
+  books.sort((a, b) => {
+    return a.id - b.id;
+  });
 };
-console.log(olderBooks);
 
 //Function sort Books (recent)
 export const recentBooks = (books) => {

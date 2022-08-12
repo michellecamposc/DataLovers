@@ -2,6 +2,9 @@ body {
   margin: 0%;
   padding: 0;
 }
+* {
+  outline: 1px solid limegreen !important;
+}
 
 .first-page {
   background-image: url(images/homepage/Background.jpg);
@@ -76,6 +79,7 @@ p {
 }
 /* Characters page(Second-page) */
 
+/*Menú con otras páginas*/
 .second-page {
   background-color: #11141b;
   min-height: 100vh;
@@ -93,9 +97,10 @@ p {
   font-family: Cinzel Decorative;
   color: white;
   text-decoration: none;
-  padding: 20px;
+  padding: 30px;
 }
 
+/*Selectores para filtrar y ordenar*/
 .select {
   background-color: rgba(102, 36, 43, 1);
   border-radius: 14px;
@@ -114,38 +119,44 @@ p {
   gap: 6rem;
   padding: 0%;
 }
-.friends-container {
+
+/*Imagen de inicio página de personajes*/
+.three-friends {
+  min-width: 100vw;
+  min-height: 70vh;
+  background: url("./images/homepage/characterpage.png");
+  background-position: center;
+  background-size: cover;
+  margin-bottom: 70px;
   display: flex;
-  position: relative;
   flex-flow: row wrap;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  justify-content: center;
   align-items: center;
 }
+.character-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 5em;
+  max-width: 50%;
+  height: auto;
+}
 
-.friends-container h2 {
+.friends-title {
   font-family: Cinzel Decorative;
+  font-size: 48px;
   color: #66242b;
-  font-size: 58px;
-  position: absolute;
-  top: 10%;
-  left: 40%;
+  max-width: 90%;
   text-align: center;
+  margin-bottom: 0.5em;
 }
 
-.friends-container p {
+.friends-pa {
   font-family: poppins;
-  color: rgba(17, 20, 27, 0.76);
-  font-size: 26px;
-  position: absolute;
-  top: 60%;
-  left: 50%;
-}
-
-.friend-img {
-  height: 100%;
-  width: 100%;
+  color: rgb(17, 20, 27);
+  font-size: 18px;
+  line-height: 2em;
+  margin-left: 3em;
+  max-width: 75%;
+  text-align: center;
 }
 
 /*Characters Card: SECOND PAGE*/
@@ -157,7 +168,6 @@ p {
   border: 4px solid #ffffff;
   border-radius: 5px;
   border-color: #f2e0c5;
-  /* background: #66242b; */
   width: 30%;
   padding: 2%;
   margin: 1%;
@@ -176,48 +186,60 @@ p {
 }
 
 /* Books page(fourth-page) */
+/*Imagen de portada de la cuarta página*/
 .books-page {
   background-color: #11141b;
   min-height: 100vh;
   display: none;
 }
-
-.books-container {
-  display: flex;
-  position: relative;
-  flex-flow: row wrap;
-  margin-top: 40px;
+.book-reading {
+  min-width: 100vw;
+  min-height: 80vh;
+  color: white;
+  background: url("./images/homepage/bookpage.png");
+  background-position: center;
+  background-size: cover;
   margin-bottom: 70px;
-  justify-content: center;
+  display: flex;
+  flex-flow: row wrap;
   align-items: center;
 }
+.book-container {
+  display: flex;
+  flex-flow: row wrap;
+  margin-left: 60px;
+  max-width: 50%;
+  height: auto;
+}
 
-.books-container h2 {
+.book-title {
   font-family: Cinzel Decorative;
-  color: white;
   font-size: 50px;
-  position: absolute;
-  top: 10%;
-  left: 40%;
+  color: #11141b;
+  max-width: 90%;
   text-align: center;
+  line-height: 1.5em;
 }
 
-.books-container p {
+.book-paragraph {
   font-family: poppins;
-  color: white;
   font-size: 20px;
-  position: absolute;
-  top: 60%;
-  left: 50%;
+  line-height: 2em;
+  margin-left: 1em;
+  max-width: 85%;
 }
+/*Selector sort para libros*/
 
-.books-img {
-  height: 100%;
+.books-select {
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 60px;
   max-width: 100%;
+  justify-content: center;
 }
 
 .select-books {
-  background-color: rgba(89, 85, 174, 1);
+  background-color: rgba(208, 175, 82, 1);
   border-radius: 14px;
   font-family: poppins;
   height: 40px;
@@ -228,23 +250,48 @@ p {
   text-align: center;
 }
 
-.books-select {
+/* Contenedor de la data de libros*/
+#books-container {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.divBook {
   display: flex;
   flex-flow: row wrap;
+  justify-content: center;
+}
+/*Cada tarjeta*/
+.bookCard {
+  display: flex;
+  flex-flow: column wrap;
+  width: 30%;
+  padding: 2%;
+  margin: 1.5em;
+}
+
+/*Titulo de las tarjetas*/
+.divBookTitle {
+  font-family: Cinzel Decorative;
+  color: rgba(208, 175, 82, 1);
+  font-size: 15px;
+  text-align: center;
+}
+/*Parrafo de libros*/
+.divContent {
   padding: 0%;
-  margin-left: 60px;
+  margin-bottom: 0%;
+  font-family: poppins;
+  font-size: 14px;
+  text-align: start;
 }
-
-/* Contenedor de los libros*/
-
-.books-card {
-  width: 100%;
-  height: 100%;
-  color: black;
-}
-
+/*Imagenes*/
 .divImgBook {
-  width: 400px;
-  height: 600px;
+  width: 300px;
+  height: 500px;
   border-radius: 20px;
+  display: flex;
+  margin-bottom: 1em;
 }
