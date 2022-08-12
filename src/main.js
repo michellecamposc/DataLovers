@@ -10,9 +10,10 @@ import {
 } from "./data.js";
 
 //Here is the first page (Characters)
-const characters = data.characters;
 //Creating HTML elements
+const characters = data.characters;
 const charactersContainer = document.getElementById("charactersContainer");
+
 function getCards(arrData) {
   const arrResult = [];
   const divCharacter = document.createElement("div");
@@ -20,6 +21,21 @@ function getCards(arrData) {
   arrData.forEach((element) => {
     const card1 = document.createElement("div");
     card1.classList.add("divCard1");
+    if (element.house === "Gryffindor") {
+      card1.classList.add("gryffindorCard");
+    }
+    if (element.house === "Slytherin") {
+      card1.classList.add("slytherinCard");
+    }
+    if (element.house === "Ravenclaw") {
+      card1.classList.add("ravenclawCard");
+    }
+    if (element.house === "Hufflepuff") {
+      card1.classList.add("hufflepuffCard");
+    }
+    if (element.house === null) {
+      card1.classList.add("nullCard");
+    }
     divCharacter.appendChild(card1);
 
     const name = document.createElement("h2");
@@ -61,39 +77,54 @@ function getCards(arrData) {
 function showCharacters() {
   const divCharacters = document.createElement("div");
   divCharacters.classList.add("divCharacters");
-  characters.forEach((characters) => {
+  characters.forEach((character) => {
     const card1 = document.createElement("div");
     card1.classList.add("divCard1");
+    if (character.house === "Gryffindor") {
+      card1.classList.add("gryffindorCard");
+    }
+    if (character.house === "Slytherin") {
+      card1.classList.add("slytherinCard");
+    }
+    if (character.house === "Ravenclaw") {
+      card1.classList.add("ravenclawCard");
+    }
+    if (character.house === "Hufflepuff") {
+      card1.classList.add("hufflepuffCard");
+    }
+    if (character.house === null) {
+      card1.classList.add("nullCard");
+    }
     divCharacters.appendChild(card1);
 
     const name = document.createElement("h2");
     name.classList.add("divName");
-    name.textContent = "Name: " + characters.name;
+    name.textContent = "Name: " + character.name;
     card1.appendChild(name);
 
     const gender = document.createElement("p");
     gender.classList.add("divGender");
-    gender.textContent = "Gender: " + characters.gender;
+    gender.textContent = "Gender: " + character.gender;
     card1.appendChild(gender);
 
     const house = document.createElement("p");
     house.classList.add("divHouse");
-    house.textContent = "House: " + characters.house;
+    house.textContent = "House: " + character.house;
     card1.appendChild(house);
 
     const species = document.createElement("p");
     species.classList.add("divSpecies");
-    species.textContent = "Specie: " + characters.species;
+    species.textContent = "Specie: " + character.species;
     card1.appendChild(species);
 
     const birth = document.createElement("p");
     birth.classList.add("divBirth");
-    birth.textContent = "Date birth: " + characters.birth;
+    birth.textContent = "Date birth: " + character.birth;
     card1.appendChild(birth);
 
     const ancestry = document.createElement("p");
     ancestry.classList.add("divAncestry");
-    ancestry.textContent = "Ancestry: " + characters.ancestry;
+    ancestry.textContent = "Ancestry: " + character.ancestry;
     card1.appendChild(ancestry);
   });
   charactersContainer.appendChild(divCharacters);
