@@ -41,7 +41,7 @@ p {
 }
 
 #span {
-  white-space: normal;
+  white-space: pre-wrap;
   border-right: 2px solid;
   width: 23ch;
   color: rgba(255, 255, 255, 1);
