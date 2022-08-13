@@ -10,7 +10,6 @@ import {
 } from "./data.js";
 
 //Here is the first page (Characters)
-//Creating HTML elements
 const characters = data.characters;
 const charactersContainer = document.getElementById("charactersContainer");
 

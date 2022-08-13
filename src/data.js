@@ -33,17 +33,15 @@ export const sortDataDown = (characters) => {
   return filterByZA;
 };
 
-//Page four
-
-//Function sort Books (oldest)
-export const olderBooks = (books) => {
+//Page four sort books
+export function olderBooks(books) {
   books.sort((a, b) => {
-    return a.id - b.id;
+    return a.id > b.id ? 1 : -1;
   });
-};
+}
 
-//Function sort Books (recent)
-export const recentBooks = (books) => {
-  let firstBook = books.sort((a, b) => b.id < a.id);
-  return firstBook;
-};
+export function recentBooks(books) {
+  books.sort((a, b) => {
+    return a.id < b.id ? 1 : -1;
+  });
+}
