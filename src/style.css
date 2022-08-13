@@ -14,16 +14,6 @@ body {
   padding: 90px;
 }
 
-h1 {
-  color: rgba(255, 255, 255, 1);
-  font-size: 35px;
-  font-family: Cinzel Decorative;
-  margin-top: 50px;
-  margin-bottom: 0;
-  position: relative;
-  text-align: center;
-}
-
 p {
   font-family: poppins;
   color: rgba(255, 255, 255, 1);
@@ -32,9 +22,48 @@ p {
   margin-bottom: 20px;
 }
 
-.welcome {
+/*h1 {
   color: rgba(255, 255, 255, 1);
+  font-size: 35px;
   font-family: Cinzel Decorative;
+  margin-top: 50px;
+  margin-bottom: 0;
+  position: relative;
+  text-align: center;
+}*/
+
+/*Efecto máquina de escribir*/
+.plataforma-container {
+  margin-top: 50px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#span {
+  white-space: normal;
+  border-right: 2px solid;
+  width: 23ch;
+  color: rgba(255, 255, 255, 1);
+  font-size: 35px;
+  font-family: Cinzel Decorative;
+
+  animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
+  overflow: hidden;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+.welcome {
   text-align: center;
 }
 
@@ -67,14 +96,14 @@ p {
 }
 
 .home-buttons {
-  background-color: rgba(255, 255, 255, 0.794);
+  background-color: rgba(255, 255, 255, 0.89);
   border-radius: 7px;
   padding: 0;
   height: 45px;
   width: 150px;
   border: none;
   font-family: Cinzel Decorative;
-  color: rgb(0, 0, 0);
+  color: rgba(102, 36, 43, 1);
   font-size: 16px;
 }
 /* Characters page(Second-page) */
@@ -321,4 +350,5 @@ p {
   border-radius: 20px;
   display: flex;
   margin-bottom: 1em;
+  margin-left: 4em;
 }
