@@ -11,9 +11,6 @@ import {
 
 //Here is the first page (Characters)
 const characters = data.characters;
-const potions = data.potions;
-const spells = data.spells;
-const books = data.books;
 
 //Creating HTML elements
 const charactersContainer = document.getElementById("charactersContainer");
@@ -208,6 +205,7 @@ specieSelect.addEventListener("change", function () {
 
 //Here is the four page (Books)
 const books = data.books;
+
 const booksContainer = document.getElementById("books-container");
 //Function show books
 function showHarryBooks() {

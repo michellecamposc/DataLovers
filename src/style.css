@@ -105,8 +105,9 @@ p {
   border-color: #ffffff;
   font-size: 15px;
   color: white;
-  text-align: center;
+  text-align: center;    
 }
+
 .select-container {
   display: flex;
   flex-flow: row wrap;
@@ -161,10 +162,7 @@ p {
   padding: 2%;
   margin: 1%;
   font-size: 12px;
-  /* background-image: url(images/casas/escudo.png); */
-  /* background-position: right; */
   background-repeat: repeat-y;
-
   background-size: 100%;
 }
 
