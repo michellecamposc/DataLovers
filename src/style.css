@@ -22,7 +22,7 @@ p {
   margin-bottom: 20px;
 }
 
-/*h1 {
+h1 {
   color: rgba(255, 255, 255, 1);
   font-size: 35px;
   font-family: Cinzel Decorative;
@@ -30,7 +30,7 @@ p {
   margin-bottom: 0;
   position: relative;
   text-align: center;
-}*/
+}
 
 /*Efecto máquina de escribir*/
 .plataforma-container {
@@ -47,7 +47,6 @@ p {
   color: rgba(255, 255, 255, 1);
   font-size: 35px;
   font-family: Cinzel Decorative;
-
   animation: typing 2s steps(12), blink 0.5s infinite step-end alternate;
   overflow: hidden;
 }
@@ -120,6 +119,7 @@ p {
   display: flex;
   flex-flow: row wrap;
   padding: 40px;
+  font-size: 18px;
 }
 
 .first-bar > a {
@@ -139,33 +139,34 @@ p {
   border-color: #ffffff;
   font-size: 15px;
   color: white;
-  text-align: center;    
+  text-align: center;
 }
 
 .select-container {
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  gap: 6rem;
+  gap: 6%;
   padding: 0%;
 }
 
 /*Imagen de inicio página de personajes*/
 .three-friends {
-  min-width: 100vw;
   min-height: 70vh;
-  background: url("./images/homepage/characterpage.png");
-  background-position: center;
+  background: url(./images/homepage/characterpage.png);
+  background-position: center center;
   background-size: cover;
-  margin-bottom: 70px;
+  background-repeat: no-repeat;
+  margin-bottom: 2%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
+  width: 100%;
 }
 .character-container {
   display: flex;
   flex-flow: row wrap;
-  margin-left: 5em;
+  margin-left: 5%;
   max-width: 50%;
   height: auto;
 }
@@ -174,7 +175,7 @@ p {
   font-family: Cinzel Decorative;
   font-size: 48px;
   color: #66242b;
-  max-width: 90%;
+  width: 90%;
   text-align: center;
   margin-bottom: 0.5em;
 }
@@ -182,10 +183,9 @@ p {
 .friends-pa {
   font-family: poppins;
   color: rgb(17, 20, 27);
-  font-size: 18px;
+  font-size: 22px;
   line-height: 2em;
-  margin-left: 3em;
-  max-width: 75%;
+  width: 90%;
   text-align: center;
 }
 
@@ -202,8 +202,8 @@ p {
   padding: 2%;
   margin: 1%;
   font-size: 12px;
-  background-repeat: repeat-y;
-  background-size: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .gryffindorCard {
@@ -229,7 +229,7 @@ p {
 }
 
 .divCard1 p {
-  font-size: 16px;
+  font-size: 20px;
   margin: 1%;
 }
 .divCharacters {
@@ -247,13 +247,14 @@ p {
   display: none;
 }
 .book-reading {
-  min-width: 100vw;
-  min-height: 80vh;
+  width: 100%;
+  min-height: 70vh;
   color: white;
-  background: url("./images/homepage/bookpage.png");
-  background-position: center;
+  background-image: url(./images/homepage/bookpage.png);
+  background-position: center center;
   background-size: cover;
-  margin-bottom: 70px;
+  background-repeat: no-repeat;
+  margin-bottom: 2%;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
@@ -262,7 +263,7 @@ p {
   display: flex;
   flex-flow: row wrap;
   margin-left: 60px;
-  max-width: 50%;
+  width: 50%;
   height: auto;
 }
 
@@ -270,7 +271,7 @@ p {
   font-family: Cinzel Decorative;
   font-size: 50px;
   color: #11141b;
-  max-width: 90%;
+  width: 75%;
   text-align: center;
   line-height: 1.5em;
 }
@@ -279,16 +280,13 @@ p {
   font-family: poppins;
   font-size: 20px;
   line-height: 2em;
-  margin-left: 1em;
-  max-width: 85%;
+  width: 75%;
 }
-/*Selector sort para libros*/
 
+/*Selector sort para libros*/
 .books-select {
   display: flex;
   flex-flow: row wrap;
-  margin-bottom: 60px;
-  max-width: 100%;
   justify-content: center;
 }
 
@@ -299,7 +297,7 @@ p {
   height: 40px;
   width: 150px;
   border-color: #ffffff;
-  font-size: 15px;
+  font-size: 18px;
   color: white;
   text-align: center;
 }
@@ -322,15 +320,15 @@ p {
   display: flex;
   flex-flow: column wrap;
   width: 30%;
-  padding: 2%;
-  margin: 1.5em;
+  margin: 2%;
+  align-items: center;
 }
 
 /*Titulo de las tarjetas*/
 .divBookTitle {
   font-family: Cinzel Decorative;
   color: rgba(208, 175, 82, 1);
-  font-size: 15px;
+  font-size: 20px;
   text-align: center;
 }
 /*Parrafo de libros*/
@@ -338,8 +336,9 @@ p {
   padding: 0%;
   margin-bottom: 0%;
   font-family: poppins;
-  font-size: 14px;
+  font-size: 20px;
   text-align: start;
+  width: 100%;
 }
 /*Imagenes*/
 .divImgBook {
@@ -347,6 +346,78 @@ p {
   height: 500px;
   border-radius: 20px;
   display: flex;
-  margin-bottom: 1em;
-  margin-left: 4em;
+  margin-bottom: 1%;
+}
+
+/*Media queries - Characters page*/
+
+@media (max-width: 992px) {
+  .first-bar {
+    font-size: 14px;
+  }
+  .three-friends {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 45vh;
+    background-color: #ffffff;
+  }
+  .friends-title {
+    font-size: 20px;
+  }
+  .friends-pa {
+    font-size: 16px;
+    margin: 0%;
+  }
+  .select {
+    height: 40px;
+    width: 110px;
+    border-color: #ffffff;
+    font-size: 12px;
+  }
+
+  .divCard1 {
+    font-size: 10px;
+    background-repeat: no-repeat;
+  }
+  .divCard1 p {
+    font-size: 12px;
+  }
+}
+
+/*Media queries - Books page*/
+@media (max-width: 992px) {
+  .book-reading {
+    background-size: 100%;
+    background-repeat: no-repeat;
+    min-height: 45vh;
+    background-color: rgba(208, 175, 82, 1);
+  }
+  .book-container {
+    margin-left: 5%;
+  }
+
+  .book-title {
+    font-size: 22px;
+  }
+
+  .book-paragraph {
+    font-size: 14px;
+  }
+
+  .select-books {
+    font-size: 14px;
+  }
+
+  .divImgBook {
+    width: 150px;
+    height: 250px;
+  }
+
+  .divBookTitle {
+    font-size: 14px;
+  }
+
+  .divContent {
+    font-size: 14px;
+  }
 }

@@ -221,7 +221,7 @@ function showHarryBooks() {
 
     const title = document.createElement("h2");
     title.classList.add("divBookTitle");
-    title.textContent = "Title: " + books.title;
+    title.textContent = books.title;
     bookCard.appendChild(title);
 
     const author = document.createElement("p");
@@ -278,3 +278,4 @@ function booksPage() {
   // Show the second page
   document.getElementById("fourth-page").style.display = "block";
 }
+
