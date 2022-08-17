@@ -6,17 +6,17 @@ export const filterHouse = (characters, house) => {
   return charactersHouse;
 };
 
-//Funtion filter by species (Humans ands magical ones)
-export const filterHuman = (characters, condition) => {
+//Function filter by species (Humans and magical ones)
+export const filterHuman = (characters) => {
   const charactersSpecies = characters.filter(
-    (element) => element.species == condition
+    (element) => element.species === "Human"
   );
   return charactersSpecies;
 };
 
-export const filterMagical = (characters, condition) => {
+export const filterMagical = (characters) => {
   const charactersSpecies = characters.filter(
-    (element) => element.species !== condition
+    (element) => element.species !== "Human"
   );
   return charactersSpecies;
 };

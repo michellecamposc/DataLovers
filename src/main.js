@@ -186,18 +186,21 @@ const specieSelect = document.getElementById("species");
 specieSelect.addEventListener("change", function () {
   if (specieSelect.value === "Humans") {
     charactersContainer.innerHTML = " ";
-    const humanSpecie = filterHuman(characters, "Human");
+    const humanSpecie = filterHuman(characters);
     const humanResult = getCards(humanSpecie);
     humanResult.forEach((element) => {
       charactersContainer.appendChild(element);
     });
   } else if (specieSelect.value === "Magical") {
     charactersContainer.innerHTML = " ";
-    const otherSpecie = filterMagical(characters, "Human");
-    const otherResult = getCards(otherSpecie);
+    const otherSpecies = filterMagical(characters);
+    const otherResult = getCards(otherSpecies);
     otherResult.forEach((element) => {
       charactersContainer.appendChild(element);
     });
+  } else if (specieSelect.value === "allSpecies") {
+    charactersContainer.innerHTML = " ";
+    showCharacters();
   }
 });
 

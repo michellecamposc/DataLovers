@@ -2,6 +2,7 @@ body {
   margin: 0%;
   padding: 0;
 }
+
 * {
   outline: 1px solid limegreen !important;
 }
@@ -41,7 +42,7 @@ p {
 }
 
 #span {
-  white-space: pre-wrap;
+  white-space: nowrap;
   border-right: 2px solid;
   width: 23ch;
   color: rgba(255, 255, 255, 1);
@@ -139,7 +140,7 @@ p {
   border-color: #ffffff;
   font-size: 15px;
   color: white;
-  text-align: center;    
+  text-align: center;
 }
 
 .select-container {
@@ -152,23 +153,32 @@ p {
 
 /*Imagen de inicio página de personajes*/
 .three-friends {
-  min-width: 100vw;
+  min-width: 100%;
   min-height: 70vh;
-  background: url("./images/homepage/characterpage.png");
-  background-position: center;
-  background-size: cover;
+  /* background: url("./images/homepage/characterpage.png");*/
+  /*background-size: cover;*/
   margin-bottom: 70px;
   display: flex;
-  flex-flow: row wrap;
   align-items: center;
 }
-.character-container {
+
+/*@media (max-width: 350px) {
+  .three-friends {
+    width: 100vh;
+  }
+  .friends-title {
+    width: 25%;
+    flex-direction: row;
+    font-size: 25px;
+  }
+}*/
+/*.character-container {
   display: flex;
   flex-flow: row wrap;
   margin-left: 5em;
   max-width: 50%;
   height: auto;
-}
+}*/
 
 .friends-title {
   font-family: Cinzel Decorative;
@@ -177,6 +187,7 @@ p {
   max-width: 90%;
   text-align: center;
   margin-bottom: 0.5em;
+  display: flex;
 }
 
 .friends-pa {
@@ -247,12 +258,10 @@ p {
   display: none;
 }
 .book-reading {
-  min-width: 100vw;
-  min-height: 80vh;
   color: white;
+  height: 77vh;
   background: url("./images/homepage/bookpage.png");
-  background-position: center;
-  background-size: cover;
+  background-position: cover;
   margin-bottom: 70px;
   display: flex;
   flex-flow: row wrap;
@@ -321,7 +330,8 @@ p {
 .bookCard {
   display: flex;
   flex-flow: column wrap;
-  width: 30%;
+  justify-content: center;
+  width: 35%;
   padding: 2%;
   margin: 1.5em;
 }
@@ -346,7 +356,5 @@ p {
   width: 300px;
   height: 500px;
   border-radius: 20px;
-  display: flex;
   margin-bottom: 1em;
-  margin-left: 4em;
 }
