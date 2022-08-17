@@ -13,13 +13,15 @@ describe('filterHouse', () => {
   });
 });
 
+describe('filterHouse', () => {
+  it('is a function', () => {
+    expect(typeof filterHouse).toBe('function');
+  });
 
-// describe('anotherExample', () => {
-//   it('is a function', () => {
-//     expect(typeof anotherExample).toBe('function');
-//   });
+  it('returns `los personajes de una casa`', () => {
+    const characters = data.characters;
+    const house = "Gryffindor";
+    expect(filterHouse(characters, house).length).toBe(56);
+  });
+});
 
-//   it('returns `anotherExample`', () => {
-//     expect(anotherExample()).toBe('OMG');
-//   });
-// });
