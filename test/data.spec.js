@@ -9,37 +9,6 @@ import {
 } from "../src/data.js";
 import data from "../src/data/harrypotter/harry.js";
 const characters = data.characters;
-/*const charactersHouse = [
-  {
-    name: "Euan Abercrombie",
-    birth: "between 1 September 1983 and 31 August 1984",
-    species: "Human",
-    gender: "Male",
-    house: "Gryffindor",
-  },
-  {
-    name: "Stewart Ackerley",
-    birth: "between 1 September 1982and 31 August 1983",
-    species: "Human",
-    gender: "Male",
-    house: "Ravenclaw",
-  },
-  {
-    name: "Avery I",
-    birth: "Between 1926 and 1932",
-    species: "Human",
-    gender: "Male",
-    house: "Slytherin",
-  },
-  {
-    name: "Amelia Bones' father",
-    birth: null,
-    species: "Human",
-    gender: "Male",
-    house: "Hufflepuff (likely)",
-  },
-];*/
-
 //Filtrar personajes de Gryffindor
 describe("filtra los personajes de Gryffindor", () => {
   it("is a function", () => {
