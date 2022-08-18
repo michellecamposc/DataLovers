@@ -3,9 +3,10 @@ body {
   padding: 0;
 }
 
-* {
+/* {
   outline: 1px solid limegreen !important;
-}
+}*/
+
 /* Home page */
 .first-page {
   background-image: url(images/homepage/Background.jpg);
