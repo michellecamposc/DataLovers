@@ -34,7 +34,7 @@ En esta investigación, se logró definir las preferencias del usuario al revela
 
 <img src= "./src/images/readme/criteriosHU2.jpg">
 
-## Proceso de creación de prototipos (de baja y alta fidelidad)
+## Proceso de creación de prototipo de baja y alta fidelidad
 
 Como resultado de las historias se idearon prototipos (sketch) de las interfaces que estarían utilizando los usuarios para vizualizar el contenido con opciones de filtrados y ordenamiento de la data de acuerdo a sus preferencias.
 
@@ -50,7 +50,15 @@ Como resultado de las historias se idearon prototipos (sketch) de las interfaces
 
 <img src= "./src/images/readme/bookspage.jpg">
 
-Por consiguiente se elaboraron los prototipos de alta fidelidad empleando la herramienta Figma, sin embargo, estos sufrieron cambios más adelante de acuerdo a la interacción de los usuarios con el producto. Se podrán vizualizar estos diseños en el siguiente link: https://www.figma.com/file/VX9hdJAuLYReX1NLluBQgp/Harry-Potter-website?node-id=2%3A2
+Por consiguiente se elaboraron los prototipos de alta fidelidad empleando la herramienta Figma, sin embargo, estos sufrieron cambios más adelante de acuerdo a la interacción de los usuarios con el producto.
+
+### Home page lo-Fi
+
+<img src= "./src/images/readme/Homepage.png">
+
+### Character page lo-Fi
+
+<img src= "./src/images/readme/Characterpage.png">
 
 ## ¿Cuándo utilizan o utilizarían el producto?
 

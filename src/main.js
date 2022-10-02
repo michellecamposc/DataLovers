@@ -18,6 +18,7 @@ function getCards(arrData) {
   const divCharacter = document.createElement("div");
   divCharacter.classList.add("divCharacters");
   arrData.forEach((element) => {
+    //cambiar el nombre de la variable card1
     const card1 = document.createElement("div");
     card1.classList.add("divCard1");
     if (element.house === "Gryffindor") {
@@ -280,4 +281,3 @@ function booksPage() {
   // Show the second page
   document.getElementById("fourth-page").style.display = "block";
 }
-

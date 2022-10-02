@@ -1,9 +1,9 @@
 {
+  "homepage": "https://michellecamposc.github.io/SCL021-data-lovers",
   "name": "data-lovers",
   "version": "1.0.0",
   "main": "src/index.html",
   "license": "MIT",
-  "homepage": " https://michellecamposc.github.io",
   "scripts": {
     "htmlhint": "htmlhint src/*.html test/*.html",
     "eslint": "eslint --ext .js src/ test/",

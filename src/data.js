@@ -21,27 +21,31 @@ export const filterMagical = (characters) => {
   return charactersSpecies;
 };
 
-//Function to order from A to Z
+//Function to order from A to Z (mejorarla)
+/*export const sortDataUp = (data,sortBy,sortOrder) => {
+  let filterByAZ = data.sort((a, b) => a.sortBy.localeCompare(b.sortBy));
+} */
+
 export const sortDataUp = (characters) => {
-  let filterByAZ = characters.sort((a, b) => a.name.localeCompare(b.name));
+  const filterByAZ = characters.sort((a, b) => a.name.localeCompare(b.name));
   return filterByAZ;
 };
 
 //Function to order from Z to A
 export const sortDataDown = (characters) => {
-  let filterByZA = characters.sort((a, b) => b.name.localeCompare(a.name));
+  const filterByZA = characters.sort((a, b) => b.name.localeCompare(a.name));
   return filterByZA;
 };
 
 //Page four sort books
+const comparador = (a, b) => {
+  return a.id > b.id ? 1 : -1;
+};
+
 export function olderBooks(books) {
-  books.sort((a, b) => {
-    return a.id > b.id ? 1 : -1;
-  });
+  return books.sort(comparador);
 }
 
 export function recentBooks(books) {
-  books.sort((a, b) => {
-    return a.id < b.id ? 1 : -1;
-  });
+  return books.reverse(comparador);
 }
